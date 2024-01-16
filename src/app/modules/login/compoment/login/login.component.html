@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <div class="body">
+      <img class="logo" src="../../../../../assets/img/logo.jpeg" alt="logo">
+  <h1>Login</h1>
+  <div class="form-floating mb-3">
+    <input type="text" class="form-control" placeholder="Ingrese su usuario" [(ngModel)]="credenciales.username" >
+    <label>Usuario</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="password" class="form-control" placeholder="Ingrese su contraseña" [(ngModel)]="credenciales.password" >
+    <label>Contraseña</label>
+  </div>
+  <div class="class d-grid gap-2">
+      <button type="button" (click)="login()" class="btn btn-primary">Iniciar Sesion</button>
+    </div>
+  </div>
+</div>
